@@ -38,26 +38,31 @@
                 <img src="images/major.jpeg" alt="patchwork quilt pieces in progress">
             </div>
             <div id="options">
-                <div>
-                    <h3>Month to Month</h3>
-                    <p>$92 a month</p>
-                    <button id="one-pocket">Subscribe Now</button>
-                </div>
-                <div>
-                    <h3>Three Months</h3>
-                    <p>$86 a month</p>
-                    <button id="three-pocket">Subscribe Now</button>
-                </div>
-                <div>
-                    <h3>Six Months</h3>
-                    <p>$82 a month</p>
-                    <button id="six-pocket">Subscribe Now</button>
-                </div>
-                <div>
-                    <h3>Twelve Months</h3>
-                    <p>$79 a month</p>
-                    <button id="year-pocket">Subscribe Now</button>
-                </div>
+                <form onsubmit="return">
+                    <div class="options-grid">
+                        <label class="item-label">
+                            <input class="item-input" type="radio" name="mjr-duration" value="1" aria-labelledby="major-1-month" aria-describedby="major-1-price">
+                            <span id="major-1-month" class="item-name">Month by Month</span>
+                            <strong id="major-1-price" class="item-price">$92 a month</strong>
+                        </label>
+                        <label class="item-label">
+                            <input class="item-input" type="radio" name="mjr-duration" value="3" aria-labelledby="major-3-month" aria-describedby="major-3-price" checked="checked">
+                            <span id="major-3-month" class="item-name">Three Months</span>
+                            <strong id="major-3-price" class="item-price">$86 a month</strong>
+                        </label>
+                        <label class="item-label">
+                            <input class="item-input" type="radio" name="mjr-duration" value="6" aria-labelledby="major-6-month" aria-describedby="major-6-price">
+                            <span id="major-6-month" class="item-name">Six Months</span>
+                            <strong id="major-6-price" class="item-price">$82 a month</strong>
+                        </label>
+                        <label class="item-label">
+                            <input class="item-input" type="radio" name="mjr-duration" value="12" aria-labelledby="major-12-month" aria-describedby="major-12-price">
+                            <span id="major-12-month" class="item-name">Twelve Months</span>
+                            <strong id="major-12-price" class="item-price">$79 a month</strong>
+                        </label>
+                    </div>
+                        <button class="btn" type="submit">Subscribe Now</button>
+                </form>
                 <p id="detail">All prices in Canadian Dollars. Shipping is calculated in the next step.</p>
             </div>
             <div id="text">

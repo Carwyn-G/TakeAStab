@@ -38,26 +38,31 @@
                 <img src="images/pocket.jpeg" alt="hands working on a cross-stitch design of a mushroom">
             </div>
             <div id="options">
-                <div>
-                    <h3>Month to Month</h3>
-                    <p class="price">$39 a month</p>
-                    <button id="one-pocket">Subscribe Now</button>
-                </div>
-                <div>
-                    <h3>Three Months</h3>
-                    <p class="price">$37 a month</p>
-                    <button id="three-pocket">Subscribe Now</button>
-                </div>
-                <div>
-                    <h3>Six Months</h3>
-                    <p class="price">$35 a month</p>
-                    <button id="six-pocket">Subscribe Now</button>
-                </div>
-                <div>
-                    <h3>Twelve Months</h3>
-                    <p class="price">$32 a month</p>
-                    <button id="year-pocket">Subscribe Now</button>
-                </div>
+                <form onsubmit="return">
+                    <div class="options-grid">
+                        <label class="item-label">
+                            <input class="item-input" type="radio" name="pkt-duration" value="1" aria-labelledby="pocket-1-month" aria-describedby="pocket-1-price">
+                            <span id="pocket-1-month" class="item-name">Month by Month</span>
+                            <strong id="pocket-1-price" class="item-price">$39 a month</strong>
+                        </label>
+                        <label class="item-label">
+                            <input class="item-input" type="radio" name="pkt-duration" value="3" aria-labelledby="pocket-3-month" aria-describedby="pocket-3-price" checked="checked">
+                            <span id="pocket-3-month" class="item-name">Three Months</span>
+                            <strong id="pocket-3-price" class="item-price">$37 a month</strong>
+                        </label>
+                        <label class="item-label">
+                            <input class="item-input" type="radio" name="pkt-duration" value="6" aria-labelledby="pocket-6-month" aria-describedby="pocket-6-price">
+                            <span id="pocket-6-month" class="item-name">Six Months</span>
+                            <strong id="pocket-6-price" class="item-price">$35 a month</strong>
+                        </label>
+                        <label class="item-label">
+                            <input class="item-input" type="radio" name="pkt-duration" value="12" aria-labelledby="pocket-12-month" aria-describedby="pocket-12-price">
+                            <span id="pocket-12-month" class="item-name">Twelve Months</span>
+                            <strong id="pocket-12-price" class="item-price">$32 a month</strong>
+                        </label>
+                    </div>
+                        <button class="btn" type="submit">Subscribe Now</button>
+                </form>
                 <p id="detail">All prices in Canadian Dollars. Shipping is calculated in the next step.</p>
             </div>
             <div id="text">
@@ -89,3 +94,40 @@
     </footer>    
 </body>
 </html>
+
+<form onsubmit="return false">
+	<div class="grid-header">
+		<h3>Delivery Method</h3>
+	</div>
+	<div class="grid grid-3">
+		<label class="item-label">
+			<input class="item-input" type="radio" name="pkt-duration" value="1" aria-labelledby="pocket-1-month" aria-describedby="pocket-1-price" checked>
+			<span class="item-info">
+				<span id="pocket-1-month" class="item-name">Standard</span>
+			</span>
+			<strong id="pocket-1-price" class="item-price">$39 a month</strong>
+		</label>
+		<label class="item-label">
+			<input class="item-input" type="radio" name="pkt-duration" value="3" aria-labelledby="pocket-3-month" aria-describedby="pocket-3-price" checked>
+			<span class="item-info">
+				<span id="pocket-3-month" class="item-name">Standard</span>
+			</span>
+			<strong id="pocket-3-price" class="item-price">$37 a month</strong>
+		</label>
+		<label class="item-label">
+			<input class="item-input" type="radio" name="pkt-duration" value="6" aria-labelledby="pocket-6-month" aria-describedby="pocket-6-price" checked>
+			<span class="item-info">
+				<span id="pocket-6-month" class="item-name">Standard</span>
+			</span>
+			<strong id="pocket-6-price" class="item-price">$35 a month</strong>
+		</label>
+        <label class="item-label">
+			<input class="item-input" type="radio" name="pkt-duration" value="12" aria-labelledby="pocket-12-month" aria-describedby="pocket-12-price" checked>
+			<span class="item-info">
+				<span id="pocket-12-month" class="item-name">Standard</span>
+			</span>
+			<strong id="pocket-12-price" class="item-price">$32 a month</strong>
+		</label>
+	</div>
+    	<button class="btn btn-lg btn-success" type="submit">Subscribe Now</button>
+</form>
