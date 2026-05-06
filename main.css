@@ -154,6 +154,7 @@ h3 {
     font-family: var(--clother);
     font-size:16pt;
     font-weight: 400;
+    color: var(--midnight)
 }
 h4 {
     font-family: var(--clother);
@@ -657,4 +658,125 @@ textarea {
 #kits {
     max-width: 70vw;
     margin-bottom: 16rem;
+}
+
+/* Questions */
+#comm-questions {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#search {
+    display: grid;
+    grid-template-columns: 1fr max-content;
+    grid-template-rows: 1fr 1fr;
+    max-width: 1000px;
+    width: 100%;
+}
+#search label {
+    grid-area: 1 / 1 / span 1 / span 1;
+}
+#search input {
+    grid-area: 2 / 1 / span 1 / span 1;
+}
+#search button {
+    grid-area: 2 / 2 / span 1 / span 1;
+    padding: .5rem;
+}
+#search button img {
+    height: 1.5rem;
+}
+#ask {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: 1fr max-content;
+}
+#ask h3 {
+    color: var(--flame);
+    grid-area: 1 / 1;
+    margin-bottom: 0;
+}
+#ask label {
+    color: var(--flame);
+    grid-area: 2 / 1;
+    margin-top: .5rem;
+}
+#ask textarea {
+    grid-area: 3 / 1;
+}
+#ask button {
+    grid-area: 3 / 2;
+}
+#question-bank {
+    background-color: var(--denim);
+    margin-top: 2rem;
+    max-width: 1024px;
+    padding: 2rem;
+}
+#question-bank section {
+    display: grid;
+    grid-template-columns: 1fr max-content;
+    grid-template-rows: auto;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.question {
+    grid-area: 1 / 1 / span 1 / span 1;
+    padding: 2rem;
+    background-color: var(--goldenrod);
+}
+.question h2 {
+    text-align: left;
+    color: var(--midnight);
+    text-transform: none;
+}
+.question p {
+    color: var(--midnight);
+}
+.special-h2 {
+    grid-area: 1 / 2 / span 1 / span 1;
+    color: var(--midnight);
+    margin: 1rem;
+}
+.special-div {
+    background-color: var(--bone);
+    grid-area: 2 / 1 / span 1 / span 2;
+}
+.answer {
+    margin: 2rem;
+}
+.special-div p {
+    color: var(--midnight);
+}
+.submit {
+    display: grid;
+    grid-template-rows: max-content max-content 1fr;
+    grid-template-columns: 1fr max-content;
+    padding: 1rem;
+    background-color: var(--midnight);
+    margin: 0;
+}
+.submit h3 {
+    grid-area: 1 / 1 / span 1 / span 1;
+    margin-bottom: .5rem;
+    color: var(--bone);
+}
+.submit label {
+    color: var(--midnight);
+    grid-area: 2 / 1 / span 1 /span 1;
+    margin-top: 0;
+    color: var(--bone);
+}
+.submit textarea {
+    grid-area: 3 / 1 / span 1 / span 1;
+}
+.submit button {
+    grid-area: 3 / 2 / span 1 / span 1;
+}
+a {
+    color: var(--midnight);
+}
+a:visited {
+    color: var(--midnight);
 }
