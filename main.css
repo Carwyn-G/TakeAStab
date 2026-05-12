@@ -38,12 +38,7 @@ nav ul{
     display: flex;
     gap: 1rem;
 }
-
-nav ul li {
-    list-style: none;
-}
-
-nav ul li a {
+#account-nav li a {
     font-family: var(--clother);
     font-weight: 400;
     font-size: 16pt;
@@ -54,7 +49,26 @@ nav ul li a {
     border: dashed var(--midnight) 1px;
     display: inline-block;
 }
-nav ul li a:hover {
+
+nav ul li {
+    list-style: none;
+}
+
+#main-menu li a {
+    font-family: var(--clother);
+    font-weight: 400;
+    font-size: 16pt;
+    text-decoration: none;
+    color: var(--flame);
+    text-transform: uppercase;
+    padding: .25rem;
+    border: dashed var(--midnight) 1px;
+    display: inline-block;
+}
+#main-menu li a:hover {
+    border: dashed var(--flame) 1px;
+}
+#account-nav li a:hover {
     border: dashed var(--flame) 1px;
 }
 
